@@ -2,7 +2,7 @@
   "name": "@react-boost/monorepo",
   "private": true,
   "workspaces": [
-    "libs/*",
+    "packages/*",
     "examples/*"
   ],
   "dependencies": {},
