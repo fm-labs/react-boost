@@ -1,0 +1,99 @@
+//@import '~react-tabulator/lib/styles.css'; // required styles
+// @import '~react-tabulator/lib/css/tabulator.min.css'; // theme
+//@import '~react-tabulator/lib/css/bootstrap/tabulator_bootstrap.min.css'; // theme
+
+.tabulator {
+  font-size: 0.8rem;
+
+  .tabulator-header {
+    .tabulator-col {
+      background: #fafafa !important;
+
+      .tabulator-col-content {
+        padding: 4px 8px;
+      }
+    }
+  }
+
+  .tabulator-row {
+    .tabulator-cell {
+      padding: 4px 8px;
+    }
+  }
+
+  .tabulator-footer {
+    background: #fafafa !important;
+
+    .tabulator-page {
+      margin: 0 2px;
+      padding: 4px 10px;
+      border-radius: 0;
+
+      &.active {
+        color: var(--primary);
+      }
+    }
+  }
+}
+
+//@import '~react-tabulator/lib/css/tabulator_modern.css'; // theme
+//@import '~react-tabulator/lib/css/bootstrap/tabulator_bootstrap4.min.css'; // theme
+//
+//.tabulator {
+//  border-color: #cecece;
+//
+//  .tabulator-header {
+//    .tabulator-col .tabulator-col-content {
+//      padding: 0.25em 0.5em;
+//      line-height: 1em;
+//    }
+//  }
+//
+//  .tabulator-row {
+//    .tabulator-cell {
+//      padding: 0.25em 0.5em;
+//      line-height: 1em;
+//    }
+//  }
+//}
+
+//.tabulator {
+//  font-size: 0.9em;
+//
+//  .tabulator-header {
+//    border-top: 0;
+//    border-bottom: 1px solid #dee2e6;
+//  }
+//
+//  .tabulator-header .tabulator-col {
+//    border-right: 1px solid #dee2e6;
+//
+//    &:last-child {
+//      border-right-width: 0;
+//    }
+//  }
+//
+//  .tabulator-header .tabulator-col .tabulator-col-content {
+//      box-sizing: border-box;
+//      position: relative;
+//      padding: .25rem;
+//  }
+//
+//  .tabulator-row {
+//    min-height: 2.0rem;
+//
+//    .tabulator-cell {
+//      border-right: 1px solid #dee2e6;
+//      padding: 0.25rem;
+//
+//      &:last-child {
+//        border-right-width: 0;
+//      }
+//    }
+//
+//  }
+//
+//  .tabulator-row:hover {
+//    background-color: #00b8d4 !important;
+//  }
+//}

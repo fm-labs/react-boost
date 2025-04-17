@@ -1,0 +1,35 @@
+.loading-container {
+    padding: 5rem;
+    width: 100%;
+    //border: 1px solid #333;
+    //background-color: #FFF;
+    //opacity: 0.9;
+
+    .loading-spinner {
+        display: inline-block;
+    }
+}
+
+.loading-container.center-screen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem 15rem;
+    text-align: center;
+}
+
+/** Spin **/
+@media (prefers-reduced-motion: no-preference) {
+    .spin {
+        animation: animation-spin infinite 2s linear;
+    }
+}
+@keyframes animation-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

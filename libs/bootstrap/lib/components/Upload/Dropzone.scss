@@ -1,0 +1,50 @@
+.Dropzone-wrapper {
+}
+
+.Dropzone-wrapper-preview {
+}
+
+.Dropzone-container {
+  padding: 1em;
+  border: 3px dashed lightgray;
+  text-align: center;
+
+  &:hover {
+    border-color: deepskyblue;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.Dropzone-preview {
+  .thumbs-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //border: 1px solid red;
+  }
+
+  .thumb {
+    border-radius: 2px;
+    border: 1px solid #eaeaea;
+    margin-right: 1rem;
+    padding: 10px;
+    box-sizing: border-box;
+
+    .thumb-inner {
+      min-width: 0;
+      height: 120px;
+      overflow: hidden;
+    }
+
+    .thumb-inner .thumb-img {
+      object-fit: cover;
+      width: inherit;
+      height: inherit;
+      max-width: inherit;
+      max-height: inherit;
+    }
+  }
+}

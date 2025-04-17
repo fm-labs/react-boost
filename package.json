@@ -1,0 +1,17 @@
+{
+  "name": "@react-boost/monorepo",
+  "private": true,
+  "workspaces": [
+    "libs/*",
+    "examples/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^9",
+    "lerna": "^8.1.9",
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 npx lerna run build --no-progress"
+  }
+}
