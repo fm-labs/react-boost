@@ -9,9 +9,7 @@ import path from 'path'
 export default defineConfig({
   resolve: {
     alias: {
-      '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
       '~react-toastify': path.resolve(__dirname, 'node_modules/react-toastify'),
-      '~react-tabulator': path.resolve(__dirname, 'node_modules/react-tabulator'),
     },
   },
   plugins: [react(), dts({ include: ['lib'] }), libInjectCss()],
@@ -28,7 +26,7 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'react',
-        'react/jsx-runtime',
+        //'react/jsx-runtime',
         // '@mui/material',
         // '@mui/system',
         // '@mui/x-date-picker',
@@ -40,7 +38,7 @@ export default defineConfig({
       output: {
         globals: {
           react: 'React',
-          'react/jsx-runtime': 'jsxRuntime',
+          // 'react/jsx-runtime': 'jsxRuntime',
           // '@mui/material': 'MaterialUI',
           // '@mui/system': 'MaterialUISystem',
           // '@mui/icons-material': 'MaterialUIIcons',

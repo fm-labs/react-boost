@@ -17,8 +17,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
-      '~react-toastify': path.resolve(__dirname, 'node_modules/react-toastify'),
-      '~react-tabulator': path.resolve(__dirname, 'node_modules/react-tabulator'),
     },
   },
   plugins: [react(), dts({ include: ['lib'] }), libInjectCss()],
@@ -35,26 +33,14 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'react',
-        'react/jsx-runtime',
+        //'react/jsx-runtime',
         'react-bootstrap',
-        'react-toastify',
-        'react-tabulator',
-        'react-dom',
-        'react-router-dom',
-        'react-icons',
-        'react-dropzone',
-        'axios',
       ],
       output: {
         globals: {
           react: 'React',
-          'react/jsx-runtime': 'jsxRuntime',
+          //'react/jsx-runtime': 'jsxRuntime',
           'react-bootstrap': 'ReactBootstrap',
-          'react-toastify': 'ReactToastify',
-          'react-tabulator': 'ReactTabulator',
-          'react-router-dom': 'ReactRouterDOM',
-          'react-dropzone': 'ReactDropzone',
-          axios: 'axios',
         },
       },
     },
