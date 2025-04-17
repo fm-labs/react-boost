@@ -1,7 +1,7 @@
 import React from 'react'
 
 export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
-  label: string | JSX.Element
+  label: string | React.JSX.Element
   as?: string | React.FC
   children?: any
 }

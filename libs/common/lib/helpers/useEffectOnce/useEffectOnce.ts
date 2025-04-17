@@ -3,7 +3,7 @@
 import React from 'react'
 
 export const useEffectOnce = (effect: () => void | (() => void)) => {
-  const destroyFunc = React.useRef<void | (() => void)>()
+  const destroyFunc = React.useRef<void | (() => void)>(null)
   const effectCalled = React.useRef(false)
   const renderAfterCalled = React.useRef(false)
   const [, setVal] = React.useState<number>(0)

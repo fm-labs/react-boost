@@ -24,7 +24,7 @@ export interface UploadFormProps {
  * @param allowedMime Allowed mime type
  * @param showPreview
  * @param dropzoneOptions Dropzone component props
- * @returns {JSX.Element}
+ * @returns {React.JSX.Element}
  * @constructor
  */
 export function UploadForm({

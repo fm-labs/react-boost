@@ -40,7 +40,7 @@ const FlyoutContext = React.createContext(initialFlyoutState)
 
 // Provider component that wraps your app and makes auth object ...
 // ... available to any child component that calls useFlyout().
-export function ProvideFlyout({ children }: { children: any }): JSX.Element {
+export function ProvideFlyout({ children }: { children: any }): React.JSX.Element {
   const flyout = useProvideFlyout()
   const { flyoutProps } = flyout
 

@@ -43,7 +43,7 @@ export type DataTableHeadCellFormatter = (
 
 export interface DataTableHeadCellFormatterProps {
   col: DataTableColumnDef
-  el: RefObject<HTMLTableHeaderCellElement>
+  el: RefObject<HTMLTableHeaderCellElement | null>
 }
 
 export type DataTableCellFormatter = (
@@ -52,5 +52,5 @@ export type DataTableCellFormatter = (
 
 export interface DataTableCellFormatterProps {
   cell: DataTableCell
-  el: RefObject<HTMLTableDataCellElement>
+  el: RefObject<HTMLTableDataCellElement | null>
 }

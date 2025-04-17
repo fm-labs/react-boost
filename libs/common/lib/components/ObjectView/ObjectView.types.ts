@@ -1,3 +1,5 @@
+import React from "react";
+
 /**
  * ObjectViewSchema interface
  */
@@ -18,4 +20,4 @@ export interface ValueRendererProps {
 /**
  * ValueRenderer type
  */
-export type ValueRenderer = (props: ValueRendererProps) => JSX.Element
+export type ValueRenderer = (props: ValueRendererProps) => React.JSX.Element
