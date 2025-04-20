@@ -29,6 +29,7 @@
     "react-dom": "^19.1.0"
   },
   "dependencies": {
+    "@react-boost/common": "*",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.0",
@@ -39,8 +40,6 @@
     "moment": "^2.29.4"
   },
   "devDependencies": {
-    "@react-boost/bootstrap": "*",
-    "@react-boost/common": "*",
     "@types/node": "^22",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
