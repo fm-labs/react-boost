@@ -11,9 +11,9 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/react-boost-material.js",
-      "require": "./dist/react-boost-material.umd.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/react-boost-material.umd.cjs"
     }
   },
   "scripts": {

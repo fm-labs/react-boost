@@ -28,9 +28,9 @@ export default defineConfig({
         // '@mui/system',
         // '@mui/x-date-picker',
         // '@mui/icons-material',
-        // 'react-dom',
-        // 'react-router-dom',
-        // 'moment'
+        'react-dom',
+        'react-router-dom',
+        'moment',
       ],
       output: {
         globals: {
@@ -39,9 +39,9 @@ export default defineConfig({
           // '@mui/material': 'MaterialUI',
           // '@mui/system': 'MaterialUISystem',
           // '@mui/icons-material': 'MaterialUIIcons',
-          // 'react-dom': 'ReactDOM',
-          // 'react-router-dom': 'ReactRouterDOM',
-          // moment: 'moment',
+          'react-dom': 'ReactDOM',
+          'react-router-dom': 'ReactRouterDOM',
+          moment: 'moment',
         },
       },
     },

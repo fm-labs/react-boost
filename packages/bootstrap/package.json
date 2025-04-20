@@ -11,9 +11,9 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/main.d.ts",
       "import": "./dist/react-boost-bootstrap.js",
-      "require": "./dist/react-boost-bootstrap.umd.cjs",
-      "types": "./dist/main.d.ts"
+      "require": "./dist/react-boost-bootstrap.umd.cjs"
     }
   },
   "scripts": {
