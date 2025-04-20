@@ -1,5 +1,6 @@
 // Components
 export * from './components/Buttons'
+export * from './components/Heading'
 export * from './components/DataTable'
 export * from './components/Tabs'
 
