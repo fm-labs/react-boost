@@ -1,11 +1,13 @@
 // https://dev.to/ag-grid/react-18-avoiding-use-effect-getting-called-twice-4i9e
 
-import React, { RefObject } from 'react'
+import React, { MutableRefObject } from 'react'
 
 export const useEffectOnce = (effect: () => void | (() => void)) => {
-  const destroyFunc = React.useRef<void | (() => void)>(null)
-  const effectCalled: RefObject<boolean> = React.useRef(false)
-  const renderAfterCalled: RefObject<boolean> = React.useRef(false)
+  const destroyFunc: MutableRefObject<void | (() => void) | null> = React.useRef<
+    void | (() => void) | null
+  >(null)
+  const effectCalled: MutableRefObject<boolean | null> = React.useRef(false)
+  const renderAfterCalled: MutableRefObject<boolean | null> = React.useRef(false)
   const [, setVal] = React.useState<number>(0)
 
   if (effectCalled.current) {
