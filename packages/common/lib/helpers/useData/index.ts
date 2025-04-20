@@ -5,7 +5,7 @@ export function useData<T>(loader: () => Promise<T>): {
   dataRef: React.RefObject<T | null>
 } {
   const [data, setData] = React.useState<T>()
-  const dataRef = React.useRef<T>(null)
+  const dataRef = React.useRef<T | null>(null)
 
   React.useEffect(() => {
     loader().then((result) => {
