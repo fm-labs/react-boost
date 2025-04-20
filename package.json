@@ -2,8 +2,10 @@
   "name": "@react-boost/monorepo",
   "private": true,
   "workspaces": [
-    "packages/*",
-    "examples/*"
+    "packages/bootstrap",
+    "packages/common",
+    "packages/material",
+    "packages/tauri-v1"
   ],
   "dependencies": {},
   "devDependencies": {
