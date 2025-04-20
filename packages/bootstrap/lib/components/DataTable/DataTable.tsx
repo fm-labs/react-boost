@@ -112,7 +112,7 @@ export const DataTable = ({ columns, data, ...props }: DataTableProps) => {
   }
 
   const className = React.useMemo(() => {
-    const classNames = []
+    const classNames: string[] = []
     classNames.push('boosttbl-table table')
 
     if (props?.small) {
