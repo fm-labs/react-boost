@@ -6,8 +6,8 @@ export const useEffectOnce = (effect: () => void | (() => void)) => {
   const destroyFunc: MutableRefObject<void | (() => void) | null> = React.useRef<
     void | (() => void) | null
   >(null)
-  const effectCalled: MutableRefObject<boolean | null> = React.useRef(false)
-  const renderAfterCalled: MutableRefObject<boolean | null> = React.useRef(false)
+  const effectCalled: MutableRefObject<boolean | null> = React.useRef<boolean | null>(false)
+  const renderAfterCalled: MutableRefObject<boolean | null> = React.useRef<boolean | null>(false)
   const [, setVal] = React.useState<number>(0)
 
   if (effectCalled.current) {
